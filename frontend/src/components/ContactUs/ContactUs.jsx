@@ -1,5 +1,8 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function ContactUs() {
   return (
@@ -19,6 +22,8 @@ function ContactUs() {
                 borderColor: "#FF9900",
                 borderWidth: "3px",
                 backgroundColor: "#262626",
+                height: "500px",
+                width: "1000px",
               }}
             >
               <Card.Body>
@@ -32,6 +37,16 @@ function ContactUs() {
                   }}
                 >
                   <center>Contact Now</center>
+                  <br />
+                  <br />
+                  <center>
+                    <Container>
+                      <Row>
+                        <Col>Form</Col>
+                        <Col>Map</Col>
+                      </Row>
+                    </Container>
+                  </center>
                 </Card.Title>
               </Card.Body>
             </Card>
