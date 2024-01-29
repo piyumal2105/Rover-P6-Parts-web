@@ -9,6 +9,9 @@ import FAQPage from "./pages/FAQPage/FAQPage";
 import ContactusPage from "./pages/ContactUsPage/ContactusPage";
 import AboutusPage from "./pages/AboutUsPage/AboutusPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
+import PrivacyAndPolicyPage from "./pages/PrivacyAndPolicyPage/PrivacyAndPolicyPage";
+import CustomerInformationPage from "./pages/CustomerInformationPage/CustomerInformationPage";
+import GiftVoucherPage from "./pages/GiftVoucherPage/GiftVoucherPage";
 
 function App() {
   const queryClient = new QueryClient();
@@ -27,6 +30,12 @@ function App() {
             path="/termsandconditions"
             element={<TermsAndConditionsPage />}
           />
+          <Route path="/privacyandpolicy" element={<PrivacyAndPolicyPage />} />
+          <Route
+            path="/customerinformation"
+            element={<CustomerInformationPage />}
+          />
+          <Route path="/giftvouchers" element={<GiftVoucherPage />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>
