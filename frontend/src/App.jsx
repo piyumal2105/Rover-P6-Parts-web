@@ -7,6 +7,8 @@ import Landing from "./components/Landing/Landing";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import FAQPage from "./pages/FAQPage/FAQPage";
 import ContactusPage from "./pages/ContactUsPage/ContactusPage";
+import AboutusPage from "./pages/AboutUsPage/AboutusPage";
+import TermsAndConditionsPage from "./pages/TermsAndConditionsPage/TermsAndConditionsPage";
 
 function App() {
   const queryClient = new QueryClient();
@@ -20,6 +22,11 @@ function App() {
           <Route path="/landing" element={<Landing />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contactus" element={<ContactusPage />} />
+          <Route path="/aboutus" element={<AboutusPage />} />
+          <Route
+            path="/termsandconditions"
+            element={<TermsAndConditionsPage />}
+          />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>
