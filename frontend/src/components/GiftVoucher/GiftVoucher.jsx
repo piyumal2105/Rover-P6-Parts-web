@@ -1,10 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 function GiftVoucher() {
+  const [show, setShow] = useState(false);
   return (
     <>
       <center>
@@ -64,6 +68,7 @@ function GiftVoucher() {
               Please make sure you enter the name of the recipient in the notes
               box.
             </Card.Text>
+            <br />
             <Container
               className="justify-content-center align-items-center"
               style={{
@@ -77,158 +82,155 @@ function GiftVoucher() {
               <center>
                 <Row>
                   <Col>
-                    <Card
+                    <Button
+                      variant="primary"
+                      onClick={() => setShow(true)}
                       style={{
                         borderColor: "#FF9900",
                         borderWidth: "3px",
                         backgroundColor: "#262626",
-                        height: "auto",
-                        width: "auto",
+                        height: "100px",
+                        width: "300px",
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "17px",
+                        fontWeight: 600,
                       }}
                     >
-                      <Card.Body>
-                        <Card.Title
+                      Gift Voucher 01
+                    </Button>
+                    <Modal
+                      show={show}
+                      onHide={() => setShow(false)}
+                      dialogClassName="modal-90w"
+                      aria-labelledby="example-custom-modal-styling-title"
+                    >
+                      <Modal.Header closeButton>
+                        <Modal.Title
+                          id="example-custom-modal-styling-title"
                           style={{
-                            textAlign: "justify",
                             fontFamily: "Montserrat, sans-serif",
-                            fontSize: "20px",
-                            fontWeight: 600,
-                            color: "white",
+                            fontSize: "27px",
                           }}
                         >
                           Gift Voucher 01
-                        </Card.Title>
-                      </Card.Body>
-                    </Card>
+                        </Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <p>
+                          Ipsum molestiae natus adipisci modi eligendi? Debitis
+                          amet quae unde commodi aspernatur enim, consectetur.
+                          Cumque deleniti temporibus ipsam atque a dolores
+                          quisquam quisquam adipisci possimus laboriosam.
+                          Quibusdam facilis doloribus debitis! Sit quasi quod
+                          accusamus eos quod. Ab quos consequuntur eaque quo
+                          rem! Mollitia reiciendis porro quo magni incidunt
+                          dolore amet atque facilis ipsum deleniti rem!
+                        </p>
+                      </Modal.Body>
+                    </Modal>
                   </Col>
                   <Col>
-                    <Card
+                    <Button
+                      variant="primary"
+                      onClick={() => setShow(true)}
                       style={{
                         borderColor: "#FF9900",
                         borderWidth: "3px",
                         backgroundColor: "#262626",
-                        height: "auto",
-                        width: "auto",
+                        height: "100px",
+                        width: "300px",
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "17px",
+                        fontWeight: 600,
                       }}
                     >
-                      <Card.Body>
-                        <Card.Title
+                      Gift Voucher 02
+                    </Button>
+                    <Modal
+                      show={show}
+                      onHide={() => setShow(false)}
+                      dialogClassName="modal-90w"
+                      aria-labelledby="example-custom-modal-styling-title"
+                    >
+                      <Modal.Header closeButton>
+                        <Modal.Title
+                          id="example-custom-modal-styling-title"
                           style={{
-                            textAlign: "justify",
                             fontFamily: "Montserrat, sans-serif",
-                            fontSize: "20px",
-                            fontWeight: 600,
-                            color: "white",
+                            fontSize: "27px",
                           }}
                         >
                           Gift Voucher 02
-                        </Card.Title>
-                      </Card.Body>
-                    </Card>
+                        </Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <p>
+                          Ipsum molestiae natus adipisci modi eligendi? Debitis
+                          amet quae unde commodi aspernatur enim, consectetur.
+                          Cumque deleniti temporibus ipsam atque a dolores
+                          quisquam quisquam adipisci possimus laboriosam.
+                          Quibusdam facilis doloribus debitis! Sit quasi quod
+                          accusamus eos quod. Ab quos consequuntur eaque quo
+                          rem! Mollitia reiciendis porro quo magni incidunt
+                          dolore amet atque facilis ipsum deleniti rem!
+                        </p>
+                      </Modal.Body>
+                    </Modal>
                   </Col>
                   <Col>
-                    <Card
+                    <Button
+                      variant="primary"
+                      onClick={() => setShow(true)}
                       style={{
                         borderColor: "#FF9900",
                         borderWidth: "3px",
                         backgroundColor: "#262626",
-                        height: "auto",
-                        width: "auto",
+                        height: "100px",
+                        width: "300px",
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "17px",
+                        fontWeight: 600,
                       }}
                     >
-                      <Card.Body>
-                        <Card.Title
+                      Gift Voucher 03
+                    </Button>
+                    <Modal
+                      show={show}
+                      onHide={() => setShow(false)}
+                      dialogClassName="modal-90w"
+                      aria-labelledby="example-custom-modal-styling-title"
+                    >
+                      <Modal.Header closeButton>
+                        <Modal.Title
+                          id="example-custom-modal-styling-title"
                           style={{
-                            textAlign: "justify",
                             fontFamily: "Montserrat, sans-serif",
-                            fontSize: "20px",
-                            fontWeight: 600,
-                            color: "white",
+                            fontSize: "27px",
                           }}
                         >
                           Gift Voucher 03
-                        </Card.Title>
-                      </Card.Body>
-                    </Card>
+                        </Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <p>
+                          Ipsum molestiae natus adipisci modi eligendi? Debitis
+                          amet quae unde commodi aspernatur enim, consectetur.
+                          Cumque deleniti temporibus ipsam atque a dolores
+                          quisquam quisquam adipisci possimus laboriosam.
+                          Quibusdam facilis doloribus debitis! Sit quasi quod
+                          accusamus eos quod. Ab quos consequuntur eaque quo
+                          rem! Mollitia reiciendis porro quo magni incidunt
+                          dolore amet atque facilis ipsum deleniti rem!
+                        </p>
+                      </Modal.Body>
+                    </Modal>
                   </Col>
                 </Row>
                 <br />
                 <Row>
-                  <Col>
-                    <Card
-                      style={{
-                        borderColor: "#FF9900",
-                        borderWidth: "3px",
-                        backgroundColor: "#262626",
-                        height: "auto",
-                        width: "auto",
-                      }}
-                    >
-                      <Card.Body>
-                        <Card.Title
-                          style={{
-                            textAlign: "justify",
-                            fontFamily: "Montserrat, sans-serif",
-                            fontSize: "20px",
-                            fontWeight: 600,
-                            color: "white",
-                          }}
-                        >
-                          Gift Voucher 04
-                        </Card.Title>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card
-                      style={{
-                        borderColor: "#FF9900",
-                        borderWidth: "3px",
-                        backgroundColor: "#262626",
-                        height: "auto",
-                        width: "auto",
-                      }}
-                    >
-                      <Card.Body>
-                        <Card.Title
-                          style={{
-                            textAlign: "justify",
-                            fontFamily: "Montserrat, sans-serif",
-                            fontSize: "20px",
-                            fontWeight: 600,
-                            color: "white",
-                          }}
-                        >
-                          Gift Voucher 05
-                        </Card.Title>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card
-                      style={{
-                        borderColor: "#FF9900",
-                        borderWidth: "3px",
-                        backgroundColor: "#262626",
-                        height: "auto",
-                        width: "auto",
-                      }}
-                    >
-                      <Card.Body>
-                        <Card.Title
-                          style={{
-                            textAlign: "justify",
-                            fontFamily: "Montserrat, sans-serif",
-                            fontSize: "20px",
-                            fontWeight: 600,
-                            color: "white",
-                          }}
-                        >
-                          Gift Voucher 06
-                        </Card.Title>
-                      </Card.Body>
-                    </Card>
-                  </Col>
+                  <Col></Col>
+                  <Col></Col>
+                  <Col></Col>
                 </Row>
               </center>
             </Container>
