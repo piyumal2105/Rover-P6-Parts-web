@@ -88,7 +88,6 @@ function Header() {
               >
                 Log in
               </Button>
-
               <Button
                 href="#signup"
                 style={{
