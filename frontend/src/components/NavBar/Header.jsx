@@ -89,7 +89,6 @@ function Header() {
                 Log in
               </Button>
               <Button
-                href="#signup"
                 style={{
                   backgroundColor: "#FF9900",
                   border: "1px solid #FF9900",
